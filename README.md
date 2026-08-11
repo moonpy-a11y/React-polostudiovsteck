@@ -2,10 +2,6 @@
 
 <img src="https://reactjs.org/logo-og.png" width="120" align="right" />
 
-A small React "polo app" UI (AUTOBURGER ORCHESTRATOR). This interactive README includes screenshots from the repository and a quick preview link so you or contributors can view and run the app instantly.
-
----
-
 ## Interactive preview
 
 - Open the project in an online editor: [Open in CodeSandbox](https://codesandbox.io/s/github/moonpy-a11y/React-polostudiovsteck) — this imports the GitHub repo and runs it in the browser for quick exploration and edits.
