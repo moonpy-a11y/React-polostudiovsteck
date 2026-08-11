@@ -1,27 +1,36 @@
-<div style="background:#0b66ff;color:#ffffff;padding:20px;border-radius:10px;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
-  <img src="https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/public/logo.png" width="84" height="84" alt="Project logo" />
-  <div style="min-width:220px">
-    <h1 style="margin:0;font-size:24px">AUTOBURGER ORCHESTRATOR</h1>
-    <p style="margin:6px 0 0;opacity:0.95">POLO CLASSIC RULES — Interactive preview & quick start</p>
-  </div>
-  <div style="margin-left:auto;display:flex;align-items:center;gap:12px">
-    <a href="https://codesandbox.io/s/github/moonpy-a11y/React-polostudiovsteck" target="_blank" rel="noopener noreferrer" title="Open in CodeSandbox">
-      <img src="https://codesandbox.io/static/img/play-codesandbox.svg" alt="Open in CodeSandbox" style="height:36px;border:0;vertical-align:middle" />
-    </a>
-    <a href="#interactive-preview" style="background:#ffffff;color:#0b66ff;padding:8px 12px;border-radius:6px;text-decoration:none;font-weight:600">Preview</a>
-  </div>
-</div>
+[![AUTOBURGER ORCHESTRATOR Banner](https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/assets/banner.svg)](https://github.com/moonpy-a11y/React-polostudiovsteck)
 
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in%20-CodeSandbox-000000?style=for-the-badge&logo=codesandbox&logoColor=white)](https://codesandbox.io/s/github/moonpy-a11y/React-polostudiovsteck)
 
 <img src="https://reactjs.org/logo-og.png" width="120" align="right" alt="React logo" />
+
+## Table of Contents
+
+- [Interactive preview](#interactive-preview)
+- [Demo](#demo)
+- [Features](#features)
+- [Tech stack](#tech-stack)
+- [Get started (run locally)](#get-started-run-locally)
+- [Build](#build)
+- [Contributing](#contributing)
+- [Files shown](#files-shown)
+
+
+## POLO CLASSIC RULES
 
 ## Interactive preview <a id="interactive-preview"></a>
 
 - Open the project in an online editor: [Open in CodeSandbox](https://codesandbox.io/s/github/moonpy-a11y/React-polostudiovsteck) — this imports the GitHub repo and runs it in the browser for quick exploration and edits.
 
-- Click the screenshot to view full size:
+---
 
-[![App UI screenshot](https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/Screenshot%202026-07-28%20170909.png)](https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/Screenshot%202026-07-28%20170909.png)
+## Demo <a id="demo"></a>
+
+Click the animated demo to view full size:
+
+[![Animated demo](https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/assets/demo.svg)](https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/assets/demo.svg)
+
+- Click the screenshot in the Interactive preview section to view the real UI screenshot.
 
 ---
 
@@ -90,6 +99,8 @@ Contributions are welcome. Please open an issue first if you plan to make larger
 
 - public/logo.png — project logo used in this README header
 - Screenshot 2026-07-28 170909.png — UI screenshot included above
+- assets/banner.svg — image-based header banner
+- assets/demo.svg — lightweight animated demo (SVG)
 
 ---
 

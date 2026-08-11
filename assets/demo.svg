@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 0 640 240" preserveAspectRatio="xMidYMid meet">
+  <rect width="100%" height="100%" fill="#ffffff" rx="8" />
+  <g transform="translate(40,40)">
+    <!-- simple animated mockup: three cards sliding in -->
+    <rect x="0" y="0" width="160" height="120" rx="8" fill="#0b66ff" opacity="0.95">
+      <animate attributeName="x" values="-220;0;220;0" dur="6s" repeatCount="indefinite" />
+    </rect>
+    <rect x="180" y="0" width="160" height="120" rx="8" fill="#ffb84d" opacity="0.95">
+      <animate attributeName="x" values="-40;180;400;180" dur="6s" repeatCount="indefinite" />
+    </rect>
+    <rect x="360" y="0" width="160" height="120" rx="8" fill="#7bd389" opacity="0.95">
+      <animate attributeName="x" values="200;360;640;360" dur="6s" repeatCount="indefinite" />
+    </rect>
+    <text x="0" y="160" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#333">Quick interactive demo — cards animate to show UI flow</text>
+  </g>
+</svg>
