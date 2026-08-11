@@ -1,6 +1,4 @@
-<img src="https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/public/logo.png" width="102" height="102" align="left" />
-
-# AUTOBURGER ORCHESTRATOR
+## POLO CLASSIC RULES
 
 <img src="https://reactjs.org/logo-og.png" width="120" align="right" />
 
