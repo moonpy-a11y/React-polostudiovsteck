@@ -1,8 +1,8 @@
-[![AUTOBURGER ORCHESTRATOR Banner](https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/assets/banner.svg)](https://github.com/moonpy-a11y/React-polostudiovsteck)
+
 
 [![Open in CodeSandbox](https://img.shields.io/badge/Open%20in%20-CodeSandbox-000000?style=for-the-badge&logo=codesandbox&logoColor=white)](https://codesandbox.io/s/github/moonpy-a11y/React-polostudiovsteck)
 
-<img src="https://reactjs.org/logo-og.png" width="120" align="right" alt="React logo" />
+<img src="https://reactjs.org/logo-og.png" width="120" align="right" alt="React logo">
 
 ## Table of Contents
 
