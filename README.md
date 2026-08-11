@@ -1,70 +1,89 @@
-# GitHub Codespaces ♥️ React
+<img src="https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/public/logo.png" width="102" height="102" align="left" />
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+# AUTOBURGER ORCHESTRATOR
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+<img src="https://reactjs.org/logo-og.png" width="120" align="right" />
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+A small React "polo app" UI (AUTOBURGER ORCHESTRATOR). This interactive README includes screenshots from the repository and a quick preview link so you or contributors can view and run the app instantly.
 
-This project was bootstrapped for you with [Vite](https://vitejs.dev/).
+---
 
-## Available Scripts
+## Interactive preview
 
-In the project directory, you can run:
+- Open the project in an online editor: [Open in CodeSandbox](https://codesandbox.io/s/github/moonpy-a11y/React-polostudiovsteck) — this imports the GitHub repo and runs it in the browser for quick exploration and edits.
 
-### `npm start`
+- Click the screenshot to view full size:
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+[![App UI screenshot](https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/Screenshot%202026-07-28%20170909.png)](https://raw.githubusercontent.com/moonpy-a11y/React-polostudiovsteck/main/Screenshot%202026-07-28%20170909.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000/](http://localhost:3000/) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+---
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Simple React UI built with JavaScript, CSS and HTML.
+- Responsive layout (see screenshot above).
+- Fast to run locally and easy to edit in CodeSandbox.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Tech stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React (JavaScript)
+- CSS
+- HTML
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Get started (run locally)
 
-## Learn More
+1. Clone the repository
 
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
+```bash
+git clone https://github.com/moonpy-a11y/React-polostudiovsteck.git
+cd React-polostudiovsteck
+```
 
-To learn Vitest, a Vite-native testing framework, go to [Vitest documentation](https://vitest.dev/guide/)
+2. Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+# or
+# yarn install
+```
 
-### Code Splitting
+3. Run the development server
 
-This section has moved here: [https://sambitsahoo.com/blog/vite-code-splitting-that-works.html](https://sambitsahoo.com/blog/vite-code-splitting-that-works.html)
+```bash
+npm start
+# or
+# yarn start
+```
 
-### Analyzing the Bundle Size
+Open http://localhost:5173 (Vite default) or http://localhost:3000 in your browser.
 
-This section has moved here: [https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer)
+---
 
-### Making a Progressive Web App
+## Build
 
-This section has moved here: [https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf](https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf)
+```bash
+npm run build
+# or
+# yarn build
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://vitejs.dev/guide/build.html#advanced-base-options](https://vitejs.dev/guide/build.html#advanced-base-options)
+## Contributing
 
-### Deployment
+Contributions are welcome. Please open an issue first if you plan to make larger changes. For small fixes, open a pull request and describe the change.
 
-This section has moved here: [https://vitejs.dev/guide/build.html](https://vitejs.dev/guide/build.html)
+---
 
-### Troubleshooting
+## Files shown
 
-This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
+- public/logo.png — project logo used in this README header
+- Screenshot 2026-07-28 170909.png — UI screenshot included above
+
+---
+
+_No license specified in the repository. Add a LICENSE file if you want to specify one._
