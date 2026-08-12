@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import './App.css';
+import ScreenshotPreview from './ScreenshotPreview';
 
 const zones = [
   {
@@ -133,7 +134,11 @@ function App() {
               This match cockpit sketches a real polo experience with the architecture for simulation, rules, camera control, and live match telemetry.
             </p>
           </div>
-          <div className="hero-badge">Architecture Sketch</div>
+          <div style={{display: 'flex', gap: 12, alignItems: 'center'}}>
+            <div className="hero-badge">Architecture Sketch</div>
+            {/* Screenshot preview (click to enlarge) */}
+            <ScreenshotPreview />
+          </div>
         </header>
 
         <section className="scoreboard">
