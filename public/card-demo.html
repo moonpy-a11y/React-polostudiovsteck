@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Card Color Demo — React-polostudiovsteck</title>
+  <meta name="description" content="Interactive card color demo: red, blue, pink, black, white, yellow, and flowers pattern.">
+  <style>
+    :root{--bg:#f7f7fb;--card-w:320px;--card-h:420px}
+    html,body{height:100%;margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#111;background:var(--bg);}
+    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:36px}
+    .demo{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:start;max-width:1000px;width:100%}
+    .preview{display:flex;align-items:center;justify-content:center}
+
+    .card{
+      width:var(--card-w);height:var(--card-h);border-radius:16px;box-shadow:0 10px 30px rgba(16,24,40,0.08);display:flex;flex-direction:column;overflow:hidden;transition:background 300ms ease,color 300ms ease,box-shadow 300ms ease;border:1px solid transparent}
+    .card .media{flex:1;display:flex;align-items:center;justify-content:center}
+    .card .media img{width:60%;height:auto;opacity:0.95}
+    .card .body{padding:20px;background:transparent}
+    .card h3{margin:0 0 6px 0;font-size:20px}
+    .card p{margin:0;color:rgba(0,0,0,0.65)}
+
+    .controls{padding:12px;background:#fff;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    .swatches{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+    .swatch{width:46px;height:46px;border-radius:10px;border:2px solid transparent;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;outline:none}
+    .swatch:focus{box-shadow:0 0 0 4px rgba(59,130,246,0.18);}
+    .swatch[aria-pressed="true"]{box-shadow:0 6px 18px rgba(16,24,40,0.12);transform:translateY(-2px)}
+    .label{font-size:13px;color:#333}
+
+    /* flowers pattern as CSS background using data URI SVG */
+    .pattern-flowers{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 40 40"><rect width="40" height="40" fill="%23fff4f9"/><g transform="translate(6,6)"><circle cx="8" cy="8" r="6" fill="%23ff8da1"/><circle cx="24" cy="8" r="6" fill="%23ffd166"/><circle cx="16" cy="24" r="6" fill="%2390e0ef"/></g></svg>');background-size:120px 120px}
+
+    /* individual color helpers */
+    .c-red{background:#e53935;color:#fff}
+    .c-blue{background:#1976d2;color:#fff}
+    .c-pink{background:#ff69b4;color:#111}
+    .c-black{background:#000;color:#fff}
+    .c-white{background:#fff;color:#111;border:1px solid #e6e6e6}
+    .c-yellow{background:#ffeb3b;color:#111}
+
+    /* responsive */
+    @media (max-width:860px){
+      .demo{grid-template-columns:1fr;}
+      .preview{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="demo" id="demo-root">
+      <section class="preview" aria-labelledby="preview-heading">
+        <div>
+          <h2 id="preview-heading">Interactive card preview</h2>
+          <div id="card" class="card c-blue" role="region" aria-label="Preview card">
+            <div class="media" id="card-media">
+              <!-- simple SVG React-like mark to make the demo visually similar -->
+              <svg width="140" height="140" viewBox="0 0 841.9 595.3" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="40"><ellipse cx="420" cy="300" rx="200" ry="85" transform="rotate(-30 420 300)"/><ellipse cx="420" cy="300" rx="200" ry="85" transform="rotate(30 420 300)"/><ellipse cx="420" cy="300" rx="200" ry="85"/></g></svg>
+            </div>
+            <div class="body">
+              <h3 id="card-title">Polo Card</h3>
+              <p id="card-desc">Use the swatches to change the card color. Keyboard support: Tab to swatches, press Space or Enter to activate.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="controls" aria-labelledby="controls-heading">
+        <h3 id="controls-heading">Color swatches</h3>
+        <p class="label">Choose a color variant (red, blue, pink, black, white, yellow, flowers)</p>
+        <div class="swatches" role="toolbar" aria-label="Card color swatches">
+          <button class="swatch c-red" data-color="red" aria-pressed="false" title="Red" aria-label="Red swatch"></button>
+          <button class="swatch c-blue" data-color="blue" aria-pressed="true" title="Blue" aria-label="Blue swatch"></button>
+          <button class="swatch c-pink" data-color="pink" aria-pressed="false" title="Pink" aria-label="Pink swatch"></button>
+          <button class="swatch c-black" data-color="black" aria-pressed="false" title="Black" aria-label="Black swatch"></button>
+          <button class="swatch c-white" data-color="white" aria-pressed="false" title="White" aria-label="White swatch"></button>
+          <button class="swatch c-yellow" data-color="yellow" aria-pressed="false" title="Yellow" aria-label="Yellow swatch"></button>
+          <button class="swatch" data-color="flowers" aria-pressed="false" title="Flowers" aria-label="Flowers swatch" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'80\' height=\'80\' viewBox=\'0 0 40 40\'><rect width=\'40\' height=\'40\' fill=\'%23fff4f9\'/><g transform=\'translate(6,6)\'><circle cx=\'8\' cy=\'8\' r=\'6\' fill=\'%23ff8da1\'/><circle cx=\'24\' cy=\'8\' r=\'6\' fill=\'%23ffd166\'/><circle cx=\'16\' cy=\'24\' r=\'6\' fill=\'%2390e0ef\'/></g></svg>'); background-size:46px 46px"></button>
+        </div>
+
+        <p class="label" style="margin-top:12px">View this page directly in your browser to see the interactive demo. If you're running the project locally you can open <code>public/card-demo.html</code> or run a static server (for example, <code>npx serve public</code>).</p>
+      </aside>
+    </main>
+  </div>
+
+  <script>
+    (function(){
+      const card = document.getElementById('card');
+      const swatches = Array.from(document.querySelectorAll('.swatch'));
+
+      function applyColor(name){
+        // reset classes that start with c- or pattern-*
+        card.className = 'card';
+        // choose variant
+        switch(name){
+          case 'red': card.classList.add('c-red'); break;
+          case 'blue': card.classList.add('c-blue'); break;
+          case 'pink': card.classList.add('c-pink'); break;
+          case 'black': card.classList.add('c-black'); break;
+          case 'white': card.classList.add('c-white'); break;
+          case 'yellow': card.classList.add('c-yellow'); break;
+          case 'flowers': card.classList.add('pattern-flowers'); break;
+          default: card.classList.add('c-blue');
+        }
+
+        // update text contrast for description when background is dark
+        const isDark = ['black','blue','red'].includes(name);
+        const desc = document.getElementById('card-desc');
+        desc.style.color = isDark ? 'rgba(255,255,255,0.9)' : 'rgba(0,0,0,0.65)';
+        const title = document.getElementById('card-title');
+        title.style.color = isDark ? '#fff' : '#111';
+      }
+
+      function setPressed(active){
+        swatches.forEach(s => s.setAttribute('aria-pressed', s.dataset.color === active));
+      }
+
+      function onActivate(e){
+        const btn = e.currentTarget;
+        const color = btn.dataset.color;
+        applyColor(color);
+        setPressed(color);
+      }
+
+      swatches.forEach(btn => {
+        btn.addEventListener('click', onActivate);
+        btn.addEventListener('keydown', (e)=>{
+          if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); btn.click(); }
+        });
+      });
+
+      // initialize
+      applyColor('blue');
+      setPressed('blue');
+    })();
+  </script>
+</body>
+</html>
