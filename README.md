@@ -88,13 +88,4 @@ Contributions are welcome. Please open an issue first if you plan to make larger
 
 ---
 
-## Files shown
 
-- public/logo.png — project logo used in this README header
-- Screenshot 2026-07-28 170909.png — UI screenshot included above
-- assets/banner.svg — image-based header banner
-- assets/demo.svg — lightweight animated demo (SVG)
-
----
-
-_No license specified in the repository. Add a LICENSE file if you want to specify one._
