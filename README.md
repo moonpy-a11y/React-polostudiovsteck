@@ -73,28 +73,6 @@ npm run build
 - **CSS3**: Styling with animations and responsive design
 - **HTML5**: Semantic markup
 
-## Components Overview
-
-### Header
-Displays the Polo Studio logo and tagline with gradient background
-
-### Navigation
-Sticky navbar with navigation buttons for Home, Booking, and Contact sections
-
-### HeroSection
-Large banner section with call-to-action button
-
-### Services
-Grid layout showcasing four main services with icons and descriptions
-
-### Booking
-Comprehensive form for booking lessons with fields for name, email, phone, date, service type, and message
-
-### Contact
-Contact information including address, phone, email, and business hours
-
-### Footer
-Copyright information and social media links
 
 ## Styling Features
 
@@ -123,6 +101,4 @@ Copyright information and social media links
 - Basic booking system
 - Service showcase
 
-## License
 
-This project is proprietary to Polo Studio.
