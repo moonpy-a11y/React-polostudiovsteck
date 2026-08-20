@@ -1,0 +1,83 @@
+.hero {
+  background: linear-gradient(rgba(30, 60, 114, 0.7), rgba(30, 60, 114, 0.7)),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231e3c72" width="1200" height="600"/><circle cx="200" cy="150" r="80" fill="%232a5298" opacity="0.3"/><circle cx="1000" cy="400" r="120" fill="%232a5298" opacity="0.2"/></svg>');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeInDown 0.8s ease;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.cta-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.cta-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+    min-height: 300px;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 12px 30px;
+    font-size: 0.95rem;
+  }
+}
