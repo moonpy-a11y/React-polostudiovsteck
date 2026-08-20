@@ -1,15 +1,18 @@
-# Polo Studio App v1.0
 
-A modern React application for Polo Studio - offering premium polo equipment, professional coaching, and event management.
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in%20-CodeSandbox-000000?style=for-the-badge&logo=codesandbox&logoColor=white)](https://codesandbox.io/s/github/moonpy-a11y/React-polostudiovsteck)
 
-## Features
 
-- **Home Page**: Hero section with service overview
-- **Services**: Display of core offerings (lessons, equipment rental, team training, events)
-- **Booking System**: User-friendly form to book lessons and services
-- **Contact Information**: Location, phone, email, and business hours
-- **Responsive Design**: Mobile-friendly interface for all devices
-- **Modern UI**: Clean and professional styling with animations
+## Table of Contents
+
+- [Interactive preview](#interactive-preview)
+- [Features](#features)
+- [Tech stack](#tech-stack)
+- [Get started (run locally)](#get-started-run-locally)
+- [Build](#build)
+- [Contributing](#contributing)
+- [Files shown](#files-shown)
+
+![Screenshot](Screenshot%202026-07-28%20170909.png)
 
 ## Project Structure
 
