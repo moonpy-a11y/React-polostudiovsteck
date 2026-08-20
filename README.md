@@ -1,91 +1,125 @@
-[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in%20-CodeSandbox-000000?style=for-the-badge&logo=codesandbox&logoColor=white)](https://codesandbox.io/s/github/moonpy-a11y/React-polostudiovsteck)
+# Polo Studio App v1.0
 
-
-## Table of Contents
-
-- [Interactive preview](#interactive-preview)
-- [Features](#features)
-- [Tech stack](#tech-stack)
-- [Get started (run locally)](#get-started-run-locally)
-- [Build](#build)
-- [Contributing](#contributing)
-- [Files shown](#files-shown)
-
-![Screenshot](Screenshot%202026-07-28%20170909.png)
-
-
-
-## POLO CLASSIC RULES
-
-## Interactive preview <a id="interactive-preview"></a>
-
-- Open the project in an online editor: [Open in CodeSandbox](https://codesandbox.io/s/github/moonpy-a11y/React-polostudiovsteck) — this imports the GitHub repo and runs it in the browser for quick edits and testing.
-
-a11y/React-polostudiovsteck/main/assets/demo.svg)
-
-- Click the screenshot in the Interactive preview section to view the real UI screenshot.
-
----
+A modern React application for Polo Studio - offering premium polo equipment, professional coaching, and event management.
 
 ## Features
 
-- Simple React UI built with JavaScript, CSS and HTML.
-- Responsive layout (see screenshot above).
-- Fast to run locally and easy to edit in CodeSandbox.
+- **Home Page**: Hero section with service overview
+- **Services**: Display of core offerings (lessons, equipment rental, team training, events)
+- **Booking System**: User-friendly form to book lessons and services
+- **Contact Information**: Location, phone, email, and business hours
+- **Responsive Design**: Mobile-friendly interface for all devices
+- **Modern UI**: Clean and professional styling with animations
 
----
+## Project Structure
 
-## Tech stack
+```
+src/
+├── components/
+│   ├── Header.js
+│   ├── Navigation.js
+│   ├── HeroSection.js
+│   ├── Services.js
+│   ├── Booking.js
+│   ├── Contact.js
+│   └── Footer.js
+├── styles/
+│   ├── index.css
+│   ├── App.css
+│   ├── Header.css
+│   ├── Navigation.css
+│   ├── HeroSection.css
+│   ├── Services.css
+│   ├── Booking.css
+│   ├── Contact.css
+│   └── Footer.css
+├── App.js
+└── index.js
+public/
+└── index.html
+```
 
-- React (JavaScript)
-- CSS
-- HTML
+## Getting Started
 
----
-
-## Get started (run locally)
+### Installation
 
 1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-git clone https://github.com/moonpy-a11y/React-polostudiovsteck.git
-cd React-polostudiovsteck
-```
+### Running the App
 
-2. Install dependencies
-
-```bash
-npm install
-# or
-# yarn install
-```
-
-3. Run the development server
-
+Start the development server:
 ```bash
 npm start
-# or
-# yarn start
 ```
 
-Open http://localhost:5173 (Vite default) or http://localhost:3000 in your browser.
+The app will open in your browser at `http://localhost:3000`
 
----
-
-## Build
+### Building for Production
 
 ```bash
 npm run build
-# or
-# yarn build
 ```
 
----
+## Technologies Used
 
-## Contributing
+- **React 18.2.0**: UI framework
+- **CSS3**: Styling with animations and responsive design
+- **HTML5**: Semantic markup
 
-Contributions are welcome. Please open an issue first if you plan to make larger changes. For small fixes, open a pull request and describe the change.
+## Components Overview
 
----
+### Header
+Displays the Polo Studio logo and tagline with gradient background
 
+### Navigation
+Sticky navbar with navigation buttons for Home, Booking, and Contact sections
 
+### HeroSection
+Large banner section with call-to-action button
+
+### Services
+Grid layout showcasing four main services with icons and descriptions
+
+### Booking
+Comprehensive form for booking lessons with fields for name, email, phone, date, service type, and message
+
+### Contact
+Contact information including address, phone, email, and business hours
+
+### Footer
+Copyright information and social media links
+
+## Styling Features
+
+- Gradient backgrounds for visual appeal
+- Smooth transitions and hover effects
+- Mobile-first responsive design
+- Accessibility-friendly color contrasts
+- CSS animations for enhanced user experience
+
+## Future Enhancements
+
+- User authentication system
+- Payment integration for bookings
+- Gallery of polo events
+- User profile management
+- Blog/News section
+- Advanced search and filtering
+- Real-time booking availability
+- Customer reviews and testimonials
+
+## Version History
+
+### v1.0.0
+- Initial release with core features
+- Responsive design implementation
+- Basic booking system
+- Service showcase
+
+## License
+
+This project is proprietary to Polo Studio.
